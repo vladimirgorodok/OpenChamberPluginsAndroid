@@ -9,6 +9,15 @@ android {
     namespace = "ru.opencode.plugins"
     compileSdk = 34
 
+    signingConfigs {
+        create("release") {
+            storeFile = file("../openchamber-plugins-release.keystore")
+            storePassword = "openchamberplugins"
+            keyAlias = "openchamberplugins"
+            keyPassword = "openchamberplugins"
+        }
+    }
+
     defaultConfig {
         applicationId = "ru.opencode.plugins"
         minSdk = 26
@@ -20,6 +29,7 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
+            signingConfig = signingConfigs.getByName("release")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"

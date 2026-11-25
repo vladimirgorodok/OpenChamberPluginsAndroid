@@ -1,3 +1,4 @@
 .gradle/
 app/build/
-*.jks
+*.apk
+*.keystore

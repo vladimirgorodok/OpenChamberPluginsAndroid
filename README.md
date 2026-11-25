@@ -17,6 +17,17 @@ node gen-assets.js
 - Репозиторий: https://github.com/vladimirgorodok/OpenChamberPluginsAndroid
 - Релиз с APK v1.0: https://github.com/vladimirgorodok/OpenChamberPluginsAndroid/releases/tag/v1.0
 
+## Готовые APK
+
+- Подписанный (v2-схема, рекомендуемый): `/root/workspace/OpenChamberPluginsAndroid.apk`
+  - GitHub: https://github.com/vladimirgorodok/OpenChamberPluginsAndroid/releases/download/v1.0/OpenChamberPluginsAndroid.apk
+  - sha256: `c5850e34f993ff10bf14528c171ff2762b6a86f85c7a2207a24d2b175b5e01b1`
+- Безподписанный (из `app/build/outputs/apk/release/app-release.apk`):
+  - GitHub: https://github.com/vladimirgorodok/OpenChamberPluginsAndroid/releases/download/v1.0/OpenChamberPluginsAndroid-v1.0.apk
+  - sha256: `356b7a16db4144c4c686a74a3a42a04faf573551819449143a68ec8dded27812`
+
+Проверить целостность: `sha256sum OpenChamberPluginsAndroid.apk` → `c5850e34f993ff10bf14528c171ff2762b6a86f85c7a2207a24d2b175b5e01b1`.
+
 ## Сборка
 
 ```sh
