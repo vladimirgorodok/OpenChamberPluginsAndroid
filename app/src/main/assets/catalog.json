@@ -1,0 +1,409 @@
+[
+  {
+    "id": "plugin:@langfuse/opencode-observability-plugin",
+    "type": "plugin",
+    "name": "@langfuse/opencode-observability-plugin",
+    "title": "Langfuse — телеметрия сессий",
+    "description": "Плагин OpenCode, отправляющий телеметрию сессий в Langfuse. Позволяет наблюдать за агентами, трейсами, токенами и стоимостью.",
+    "category": "Наблюдаемость",
+    "tags": [
+      "langfuse",
+      "telemetry",
+      "tracing",
+      "observability"
+    ],
+    "package": "@langfuse/opencode-observability-plugin",
+    "url": "https://www.npmjs.com/package/@langfuse/opencode-observability-plugin",
+    "install": "opencode plugin add @langfuse/opencode-observability-plugin",
+    "notes": "Требует ключ Langfuse (LANGFUSE_PUBLIC_KEY / LANGFUSE_SECRET_KEY) — положите их в окружение перед установкой."
+  },
+  {
+    "id": "plugin:@softprobe/opencode-plugin",
+    "type": "plugin",
+    "name": "@softprobe/opencode-plugin",
+    "title": "Softprobe — телеметрия инструментов",
+    "description": "Плагин OpenCode для отправки телеметрии инструментов и сессий в Softprobe.",
+    "category": "Наблюдаемость",
+    "tags": [
+      "softprobe",
+      "telemetry",
+      "observability"
+    ],
+    "package": "@softprobe/opencode-plugin",
+    "url": "https://www.npmjs.com/package/@softprobe/opencode-plugin",
+    "install": "opencode plugin add @softprobe/opencode-plugin"
+  },
+  {
+    "id": "plugin:@2digits/opencode-plugin",
+    "type": "plugin",
+    "name": "@2digits/opencode-plugin",
+    "title": "PostHog — аналитика LLM",
+    "description": "Плагин OpenCode для интеграции с PostHog LLM аналитикой (понятия, трейсы, события инструментов).",
+    "category": "Наблюдаемость",
+    "tags": [
+      "posthog",
+      "analytics",
+      "llm"
+    ],
+    "package": "@2digits/opencode-plugin",
+    "url": "https://www.npmjs.com/package/@2digits/opencode-plugin",
+    "install": "opencode plugin add @2digits/opencode-plugin"
+  },
+  {
+    "id": "plugin:@cortexkit/opencode-magic-context",
+    "type": "plugin",
+    "name": "@cortexkit/opencode-magic-context",
+    "title": "Magic Context — память между сессиями",
+    "description": "Кросс-сессионная память и управление контекстом для OpenCode (Magic Context).",
+    "category": "Память",
+    "tags": [
+      "memory",
+      "context",
+      "cross-session"
+    ],
+    "package": "@cortexkit/opencode-magic-context",
+    "url": "https://www.npmjs.com/package/@cortexkit/opencode-magic-context",
+    "install": "opencode plugin add @cortexkit/opencode-magic-context"
+  },
+  {
+    "id": "plugin:@openviking/opencode-plugin",
+    "type": "plugin",
+    "name": "@openviking/opencode-plugin",
+    "title": "OpenViking — поиск по репозиторию и память",
+    "description": "Унифицированный плагин OpenCode для поиска по репозиториям и долгосрочной памяти OpenViking.",
+    "category": "Память",
+    "tags": [
+      "openviking",
+      "retrieval",
+      "memory"
+    ],
+    "package": "@openviking/opencode-plugin",
+    "url": "https://www.npmjs.com/package/@openviking/opencode-plugin",
+    "install": "opencode plugin add @openviking/opencode-plugin"
+  },
+  {
+    "id": "plugin:@remembrance-ai/opencode-plugin",
+    "type": "plugin",
+    "name": "@remembrance-ai/opencode-plugin",
+    "title": "Remembrance — хуки сессий и память",
+    "description": "Плагин с хуками сессий OpenCode, наблюдением за инструментами, напоминаниями памяти (Remembrance).",
+    "category": "Память",
+    "tags": [
+      "remembrance",
+      "hooks",
+      "memory"
+    ],
+    "package": "@remembrance-ai/opencode-plugin",
+    "url": "https://www.npmjs.com/package/@remembrance-ai/opencode-plugin",
+    "install": "opencode plugin add @remembrance-ai/opencode-plugin"
+  },
+  {
+    "id": "plugin:opencode-supermemory",
+    "type": "plugin",
+    "name": "opencode-supermemory",
+    "title": "Supermemory — постоянная память",
+    "description": "Плагин OpenCode, дающий агентам кода постоянную память через Supermemory.",
+    "category": "Память",
+    "tags": [
+      "supermemory",
+      "memory",
+      "agents"
+    ],
+    "package": "opencode-supermemory",
+    "url": "https://www.npmjs.com/package/opencode-supermemory",
+    "install": "opencode plugin add opencode-supermemory"
+  },
+  {
+    "id": "plugin:@mastra/opencode",
+    "type": "plugin",
+    "name": "@mastra/opencode",
+    "title": "Mastra — Observational Memory",
+    "description": "Плагин OpenCode от Mastra с Observational Memory для агентов.",
+    "category": "Память",
+    "tags": [
+      "mastra",
+      "memory",
+      "observability"
+    ],
+    "package": "@mastra/opencode",
+    "url": "https://www.npmjs.com/package/@mastra/opencode",
+    "install": "opencode plugin add @mastra/opencode"
+  },
+  {
+    "id": "plugin:@tarquinen/opencode-dcp",
+    "type": "plugin",
+    "name": "@tarquinen/opencode-dcp",
+    "title": "Dynamic Context Pruning",
+    "description": "Плагин OpenCode, оптимизирующий расход токенов и отсекающий устаревшие выходы инструментов из контекста.",
+    "category": "Производительность",
+    "tags": [
+      "dcp",
+      "context",
+      "tokens",
+      "pruning"
+    ],
+    "package": "@tarquinen/opencode-dcp",
+    "url": "https://www.npmjs.com/package/@tarquinen/opencode-dcp",
+    "install": "opencode plugin add @tarquinen/opencode-dcp"
+  },
+  {
+    "id": "plugin:opencode-mcp-triage",
+    "type": "plugin",
+    "name": "opencode-mcp-triage",
+    "title": "MCP Triage — активация по требованию",
+    "description": "Плагин OpenCode с инструментом mcp_activate: включает выключенные MCP-серверы по требованию для экономии токенов.",
+    "category": "Производительность",
+    "tags": [
+      "mcp",
+      "tokens",
+      "triage"
+    ],
+    "package": "opencode-mcp-triage",
+    "url": "https://www.npmjs.com/package/opencode-mcp-triage",
+    "install": "opencode plugin add opencode-mcp-triage"
+  },
+  {
+    "id": "plugin:@max10240/opencode-plugin-unicorn",
+    "type": "plugin",
+    "name": "@max10240/opencode-plugin-unicorn",
+    "title": "Unicorn — коллекция плагинов",
+    "description": "Коллекция плагинов OpenCode с независимо настраиваемыми функциями (утилиты, автодополнение, отладка и др.).",
+    "category": "Утилиты",
+    "tags": [
+      "unicorn",
+      "collection",
+      "utilities"
+    ],
+    "package": "@max10240/opencode-plugin-unicorn",
+    "url": "https://www.npmjs.com/package/@max10240/opencode-plugin-unicorn",
+    "install": "opencode plugin add @max10240/opencode-plugin-unicorn"
+  },
+  {
+    "id": "plugin:@joe-broadhead/opencode-messaging",
+    "type": "plugin",
+    "name": "@joe-broadhead/opencode-messaging",
+    "title": "Мессенджинг между агентами",
+    "description": "Плагин OpenCode для мессенджинга между агентами и задачами.",
+    "category": "Продуктивность",
+    "tags": [
+      "messaging",
+      "agents",
+      "tasks"
+    ],
+    "package": "@joe-broadhead/opencode-messaging",
+    "url": "https://www.npmjs.com/package/@joe-broadhead/opencode-messaging",
+    "install": "opencode plugin add @joe-broadhead/opencode-messaging"
+  },
+  {
+    "id": "plugin:@joe-broadhead/opencode-history",
+    "type": "plugin",
+    "name": "@joe-broadhead/opencode-history",
+    "title": "История сессий",
+    "description": "Плагин OpenCode для поиска, чтения и воспоминания последних сессий.",
+    "category": "Продуктивность",
+    "tags": [
+      "history",
+      "sessions",
+      "search"
+    ],
+    "package": "@joe-broadhead/opencode-history",
+    "url": "https://www.npmjs.com/package/@joe-broadhead/opencode-history",
+    "install": "opencode plugin add @joe-broadhead/opencode-history"
+  },
+  {
+    "id": "plugin:@sjawhar/opencode-legion-envoy",
+    "type": "plugin",
+    "name": "@sjawhar/opencode-legion-envoy",
+    "title": "Legion Envoy",
+    "description": "Плагин OpenCode для Legion's Envoy.",
+    "category": "Специализированные",
+    "tags": [
+      "legion",
+      "envoy"
+    ],
+    "package": "@sjawhar/opencode-legion-envoy",
+    "url": "https://www.npmjs.com/package/@sjawhar/opencode-legion-envoy",
+    "install": "opencode plugin add @sjawhar/opencode-legion-envoy"
+  },
+  {
+    "id": "mcp:routerai",
+    "type": "mcp",
+    "name": "routerai",
+    "title": "RouterAI",
+    "description": "MCP-сервер аккаунта RouterAI (https://routerai.ru/api/v1). Дает доступ к каталогу моделей, текстовым запросам и балансу. Уже установлен и подключен.",
+    "category": "Каталоги моделей",
+    "tags": [
+      "routerai",
+      "models",
+      "catalog",
+      "balance"
+    ],
+    "package": null,
+    "url": "https://routerai.ru",
+    "install": "opencode mcp add routerai --url https://routerai.ru/api/v1",
+    "notes": "Платные вызовы списываются с баланса аккаунта; информацию по стоимости — через get_statement/get_top_up_link."
+  },
+  {
+    "id": "mcp:sequential-thinking",
+    "type": "mcp",
+    "name": "sequential-thinking",
+    "title": "Sequential Thinking",
+    "description": "MCP-сервер для sequential thinking: инструмент для расширенного мышления и рассуждений. Установлен, статус: выключен.",
+    "category": "Инструменты мышления",
+    "tags": [
+      "thinking",
+      "reasoning"
+    ],
+    "install": "opencode mcp add sequential-thinking --npx sequential-thinking-mcp",
+    "notes": "При установке задайте список возможных путей (always_thought_channel и др.) или используйте безопасные каналы по умолчанию."
+  },
+  {
+    "id": "mcp:filesystem",
+    "type": "mcp",
+    "name": "filesystem",
+    "title": "Filesystem",
+    "description": "Встроенный MCP-сервер для доступа к файловой системе (чтение, запись, поиск). Установлен, статус: выключен.",
+    "category": "Файлы",
+    "tags": [
+      "files",
+      "filesystem"
+    ],
+    "install": "opencode mcp add filesystem --npx @modelcontextprotocol/server-filesystem /root /tmp",
+    "notes": "Настройте список разрешенных путей при установке (в примере: /root и /tmp)."
+  },
+  {
+    "id": "mcp:github",
+    "type": "mcp",
+    "name": "github",
+    "title": "GitHub",
+    "description": "MCP-сервер GitHub: репозитории, issues, PR, поиск по коду и прочее. Установлен, статус: выключен.",
+    "category": "Разработка",
+    "tags": [
+      "github",
+      "git",
+      "repos"
+    ],
+    "install": "opencode mcp add github --npx @modelcontextprotocol/server-github",
+    "notes": "Требует валидный GitHub токен: передайте переменную окружения GITHUB_TOKEN (или --env GITHUB_TOKEN=...)."
+  },
+  {
+    "id": "mcp:memory",
+    "type": "mcp",
+    "name": "memory",
+    "title": "Memory",
+    "description": "Встроенный MCP-сервер семантической памяти (knowledge graph). Установлен, статус: выключен.",
+    "category": "Память",
+    "tags": [
+      "memory",
+      "knowledge",
+      "graph"
+    ],
+    "install": "opencode mcp add memory --npx @modelcontextprotocol/server-memory",
+    "notes": "Память хранится в памяти процесса; для сохранения данных используйте связанные плагины (например, Magic Context)."
+  },
+  {
+    "id": "mcp:playwright",
+    "type": "mcp",
+    "name": "playwright",
+    "title": "Playwright",
+    "description": "MCP-сервер Playwright: автоматизация браузера (открытие страниц, клики, снимки экрана, формы). Установлен, статус: выключен.",
+    "category": "Браузер",
+    "tags": [
+      "playwright",
+      "browser",
+      "automation"
+    ],
+    "install": "opencode mcp add playwright --npx @playwright/browser-mcp",
+    "notes": "Сначала установите Playwright: npx playwright install"
+  },
+  {
+    "id": "mcp:exa",
+    "type": "mcp",
+    "name": "exa",
+    "title": "Exa — веб-поиск",
+    "description": "Удаленный MCP-сервер Exa для веб-поиска, экстракта и семантического поиска. Нужен Exa API key.",
+    "category": "Веб-поиск",
+    "tags": [
+      "exa",
+      "search",
+      "web"
+    ],
+    "install": "opencode mcp add exa --url https://mcp.exa.ai/mcp --header x-api-key=$EXA_API_KEY",
+    "notes": "Нужен ключ Exa (выдается на exa.ai); передайте его как переменную окружения или замените заглушку в команде."
+  },
+  {
+    "id": "addition:openchamber-schedules",
+    "type": "addition",
+    "name": "openchamber-schedules",
+    "title": "OpenChamber — плановые задачи",
+    "description": "Дополнение OpenChamber: создание запланированных задач (daily/weekly/cron/once), запуск, удаление и включение/выключение через openchamber schedule.",
+    "category": "OpenChamber",
+    "tags": [
+      "schedules",
+      "cron",
+      "daily",
+      "weekly"
+    ],
+    "package": null,
+    "install": "openchamber schedule list --dir /root/workspace",
+    "notes": "Создать задачу: openchamber schedule create --dir /root/workspace --name <name> --prompt <prompt> --model provider/model (--daily HH:mm | --cron expr | ...)"
+  },
+  {
+    "id": "addition:openchamber-startup",
+    "type": "addition",
+    "name": "openchamber-startup",
+    "title": "OpenChamber — автозапуск",
+    "description": "Дополнение OpenChamber: установка и удаление native user startup integration (autostart) порта OpenChamber сервера.",
+    "category": "OpenChamber",
+    "tags": [
+      "startup",
+      "autostart",
+      "systemd"
+    ],
+    "install": "openchamber startup status",
+    "notes": "Включить: openchamber startup enable; отключить: openchamber startup disable"
+  },
+  {
+    "id": "addition:openchamber-projects",
+    "type": "addition",
+    "name": "openchamber-projects",
+    "title": "OpenChamber — проекты",
+    "description": "Дополнение OpenChamber: просмотр настроенных проектов и их ID.",
+    "category": "OpenChamber",
+    "tags": [
+      "projects",
+      "workspace"
+    ],
+    "install": "openchamber projects list",
+    "notes": "Открыть проект: openchamber session list --project <projectId>"
+  },
+  {
+    "id": "addition:openchamber-sessions",
+    "type": "addition",
+    "name": "openchamber-sessions",
+    "title": "OpenChamber — сессии",
+    "description": "Дополнение OpenChamber: список сессий, статус, просмотр сообщений и продолжение взаимодействия.",
+    "category": "OpenChamber",
+    "tags": [
+      "sessions",
+      "messages",
+      "history"
+    ],
+    "install": "openchamber session list --limit 20",
+    "notes": "Просмотр лога сессии: openchamber session messages <sessionId> --last 50"
+  },
+  {
+    "id": "addition:openchamber-agent-tool",
+    "type": "addition",
+    "name": "openchamber-agent-tool",
+    "title": "OpenChamber — agent tool для OpenCode",
+    "description": "Локальный плагин OpenChamber, дающий OpenCode инструменты управления сессиями OpenChamber (список, прочитать сообщения).",
+    "category": "OpenChamber",
+    "tags": [
+      "agent-tool",
+      "sessions"
+    ],
+    "package": "openchamber-agent-tool",
+    "install": "openchamber projects list"
+  }
+]
