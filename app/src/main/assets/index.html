@@ -449,9 +449,7 @@
     "package": "openchamber-agent-tool",
     "install": "openchamber projects list"
   }
-]
-
-  const list = document.getElementById("list");
+];const list = document.getElementById("list");
   const search = document.getElementById("search");
   const log = document.getElementById("log");
 
@@ -504,12 +502,32 @@
 
   function runAsync(cmd, label) {
     if (cmd) log.textContent = label + cmd + "\nВыполняю…";
-    Android.runAsync(cmd);
+    try {
+      Android.runAsync(cmd);
+    } catch (e) {
+      log.textContent = (log.textContent || "") + "\nОшибка: " + (e && e.message ? e.message : e);
+    }
   }
 
   function runSync(cmd) {
-    return Android.run(cmd);
+    try {
+      const out = Android.run(cmd);
+      return (out && out.trim()) ? out : "(нет вывода)";
+    } catch (e) {
+      return "Ошибка: " + (e && e.message ? e.message : e);
+    }
   }
+
+  // Результат асинхронной команды (MainActivity → window.onCommandResult)
+  window.onCommandResult = function (json) {
+    try {
+      const j = JSON.parse(json);
+      const out = (j.output || "").trim();
+      log.textContent = (j.command ? j.command + "\n\n" : "") + (out || "(нет вывода)");
+    } catch (_) {
+      log.textContent = String(json);
+    }
+  };
 
   document.getElementById("check").addEventListener("click", () => {
     log.textContent = "Проверка установленных:\n" +

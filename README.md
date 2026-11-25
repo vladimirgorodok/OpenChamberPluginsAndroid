@@ -19,14 +19,17 @@ node gen-assets.js
 
 ## Готовые APK
 
-- Подписанный (v2-схема, рекомендуемый): `/root/workspace/OpenChamberPluginsAndroid.apk`
+- Подписанный, актуальный (рекомендуемый): `/root/workspace/OpenChamberPluginsAndroid.apk`
+  - GitHub: https://github.com/vladimirgorodok/OpenChamberPluginsAndroid/releases/download/v1.0/OpenChamberPluginsAndroid-v1.1.apk
+  - sha256: `4cd3d95ae5cdc71f87623eeb7e3cb2c99b2387fc060322195b364d3b99839300`
+- Подписанный v1.0: `/root/workspace/OpenChamberPluginsAndroid-v1.0.apk`
   - GitHub: https://github.com/vladimirgorodok/OpenChamberPluginsAndroid/releases/download/v1.0/OpenChamberPluginsAndroid.apk
   - sha256: `c5850e34f993ff10bf14528c171ff2762b6a86f85c7a2207a24d2b175b5e01b1`
-- Безподписанный (из `app/build/outputs/apk/release/app-release.apk`):
-  - GitHub: https://github.com/vladimirgorodok/OpenChamberPluginsAndroid/releases/download/v1.0/OpenChamberPluginsAndroid-v1.0.apk
-  - sha256: `356b7a16db4144c4c686a74a3a42a04faf573551819449143a68ec8dded27812`
+- Безподписанный (для отладки): `app/build/outputs/apk/release/app-release-unsigned.apk` (из `v1.0` релиза: https://github.com/vladimirgorodok/OpenChamberPluginsAndroid/releases/download/v1.0/OpenChamberPluginsAndroid-v1.0.apk)
 
-Проверить целостность: `sha256sum OpenChamberPluginsAndroid.apk` → `c5850e34f993ff10bf14528c171ff2762b6a86f85c7a2207a24d2b175b5e01b1`.
+Проверить целостность: `sha256sum OpenChamberPluginsAndroid.apk` → `4cd3d95ae5cdc71f87623eeb7e3cb2c99b2387fc060322195b364d3b99839300`.
+
+v1.1: исправлена работа кнопок «Установить» и добавлен вывод результата установки/проверки в интерфейсе.
 
 ## Сборка
 
